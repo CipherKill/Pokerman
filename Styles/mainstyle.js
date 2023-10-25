@@ -5,17 +5,20 @@ const {height,width}=Dimensions.get('window')
 export const styles={
     container:{
         backgroundColor:'#070b12',
-        height:height,
+        height:height+100,
         paddingVertical:25,
         paddingHorizontal:20
+    },
+    header:{
+        backgroundColor:'#070b12',        
     },
     headerTitle:{
         color:'cyan',
         fontWeight:'500',
-        fontSize:40
+        fontSize:40,
     },
     mainContainer:{
-        marginVertical:50
+        marginVertical:50,
     },
     mainInput:{
         color:'lightgrey',
@@ -33,7 +36,7 @@ export const styles={
     },
     mainResultTitle:{
         color:'lightgrey',
-        fontSize:40,
+        fontSize:30,
         marginVertical:20
     },
     buttonContainer:{
@@ -63,5 +66,9 @@ export const styles={
         color:'white',
         fontSize:20,
         alignSelf:'center'
+    },
+    mainButtonContainer:{
+        // height:500,
+        // backgroundColor:'red'
     }
 }
