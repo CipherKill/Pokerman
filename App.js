@@ -43,11 +43,11 @@ const App=()=>{
 
   return (
     <SafeAreaView>
-      <ScrollView keyboardShouldPersistTaps='handled'>
         <View style={styles.container}>
           <View style={styles.header}>
             <Text style={styles.headerTitle}>Pokerman <Text style={{fontSize:20}}>By Alan</Text></Text>
           </View>
+      <ScrollView keyboardShouldPersistTaps='handled'>
           {/* <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'position'}> */}
             <View style={styles.mainContainer}>
               <Text style={styles.label}>Buy-in Amount:</Text>
@@ -65,8 +65,8 @@ const App=()=>{
               </View>
             </View>
           {/* </KeyboardAvoidingView> */}
-        </View>
       </ScrollView>
+        </View>
     </SafeAreaView>
   );
 }

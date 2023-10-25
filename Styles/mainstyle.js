@@ -5,7 +5,7 @@ const {height,width}=Dimensions.get('window')
 export const styles={
     container:{
         backgroundColor:'#070b12',
-        height:height+100,
+        height:height,
         paddingVertical:25,
         paddingHorizontal:20
     },
@@ -43,8 +43,10 @@ export const styles={
         borderWidth:5,
         borderColor:'cyan',
         borderRadius:10,
-        padding:25,
-        marginBottom:25
+        padding:20,
+        flex:1,
+        marginRight:20
+        // marginBottom:25
     },
     buttonTitle:{
         color:'cyan',
@@ -60,15 +62,16 @@ export const styles={
         borderWidth:5,
         borderColor:'white',
         borderRadius:10,
-        padding:10,
+        padding:20,
     },
     clearTitle:{
         color:'white',
-        fontSize:20,
+        fontSize:25,
         alignSelf:'center'
     },
     mainButtonContainer:{
-        // height:500,
-        // backgroundColor:'red'
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center'
     }
 }
